@@ -157,7 +157,7 @@
 
           # --- 6. BUILD CONFIG ---
           sdImage = {
-            compressImage = false;
+            compressImage = true;
             postBuildCommands = ''
               dd if=${pkgs.ubootOrangePiZero2W}/u-boot-sunxi-with-spl.bin of=$img bs=1024 seek=8 conv=notrunc
             '';
